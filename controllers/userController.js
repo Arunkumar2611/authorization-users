@@ -26,9 +26,9 @@ export const createUser = async (req, res) => {
         console.log("sss")
         const {firstname, lastname, age, city, mobile} = req.body;
 
-        if(!(firstname && lastname && age && city && mobile)) {
-            res.status(400).send("All inputs are required.");
-        }
+        // if(!(firstname && lastname && age && city && mobile)) {
+        //     res.status(400).send("All inputs are required.");
+        // }
 
         const user = new User({
             firstname: firstname,
